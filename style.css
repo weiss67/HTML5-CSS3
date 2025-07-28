@@ -1,6 +1,41 @@
 body {
-  background-color: powderblue;
+  background-color: rgb(42, 41, 46);
+  /*background-color: rgb(79, 91, 233); /*violet en secondaire*/
+  font-family: Arial, sans-serif;
+  color: white;
+  /*background-color: rgb(12, 11, 14);/* Onyx */
+  /*background-color: rgb(79, 91, 235);/* violet en secondaire */
 }
+
+nav {
+    margin: 5% auto;
+    width: 50%; /* Mileu */
+    height: 0%;
+    /* background: rgb(79, 91, 233) */
+}
+
+nav .nav_listing {
+    margin: 3%;
+    padding: 3%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background: rgb(255, 255, 255) */
+}
+
+nav .nav_listing a {
+    width: 125%;
+    margin: 5%;
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+    border-radius: 5px;
+    background: rgb(79, 91, 233);
+    color: white;
+}
+
 h1 {
   color: rgb(255, 255, 255);
   font-family: verdana; /* police */
