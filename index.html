@@ -11,27 +11,39 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header id="Wlcm">
         <h1>Mon blog</h1>
         <nav>
             <ul>
-                <il><a href="#">Acceuil</a></il>
-                <il><a href="#">Contact</a></il>
+                <il><a href="#Wlcm">Acceuil</a><br></il>
+                <il><a href="#Text">Text</a><br></il>
+                <il><a href="#img">Image</a><br></il>
+                <il><a href="#mp4">Vidéo</a><br></il>
+                <il><a href="#link">Lien</a><br></il>
+                <il><a href="#tbl">Tableau</a><br></il>
+                <il><a href="#form">Form</a><br></il>
+                <il><a href="#jvst">Javascript</a><br></il>
+            </ul>
+            <ul>
+                <!-- permet de chiffre dans l'ordre et modifiable en CSS  -->
+                <ol>test</ol>
+                <ol>test</ol>
+                <ol>test</ol>
             </ul>
         </nav>
     </header>
     <article>
-        <section>
+        <section id="Text">
             <h2>Section 1 (texte)</h2>
             <div>
                 <p>Texte du section 1</p>
             </div>
         </section>
-        <section>
+        <section id="img">
             <h2>Section 2 (image)</h2>
             <img src="image.jpg" alt="Description de l'image">
         </section>
-        <section>
+        <section id="mp4">
             <h2>Section 3 (vidéo)</h2>
             <!-- <video controls>
                 <source src="video.mp4" type="video/mp4">
@@ -42,13 +54,13 @@
                 <iframe src="https://www.youtube.com/embed/tPJCvwRrYWo" frameborder="0" allowfullscreen></iframe>
             </div>
         </section>
-        <section>
+        <section id="link">
             <h2>Section 4 (Link)</h2>
             <a href="https://example.com">Lien vers Example</a>
             <span style="color:red;">Lien en rouge</span>
             <strong>Texte en gras</strong>
         </section>
-        <section>
+        <section id="tbl">
             <h2>Section 5 (Tableau)</h2>
             <table border ="1">
                 <tr>
@@ -61,21 +73,21 @@
                 </tr>
             </table>
         </section>
-        <section>
+        <section id="form">
             <h2>Section 6 (Form)</h2>
             <form>
-                <label for="nom">Nom</label>
+                <label for="nom">Nom<br></label>
                 <input type="text" id="nom" name="nom">
-                <textaera placeholder="Votre message"></textaera>
+                <textaera placeholder="Votre message" required></textaera>
                 <button type="submit">Envoyer</button>
             </form>
         </section>
-        <section>
+        <section id="jvst">
             <h2>Section 6 (Form)</h2>
-<h2>Demo JavaScript in Head</h2>
-
-<p id="demo">A Paragraph</p>
-<button type="button" onclick="myFunction()">Try it</button>
+            <h3>Demo JavaScript in Head</h3>
+            
+            <p id="demo">A Paragraph</p>
+            <button type="button" onclick="myFunction()">Try it</button>
         </section>
     </article>
 </body>
