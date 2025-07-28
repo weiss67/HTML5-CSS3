@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Formulaire principal</h1>
+        <nav>
+            <ul>
+                <il><a href="#">Formulaire</a></il>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Section formulaire</h2>
+        <form action="/ma-page-de-traitement" method="post">
+            <section>
+                <fieldset>
+                    <legend>Taille du jus de fruits</legend>
+                    <p>
+                        <input type="radio" name="size" id="size_1" value="small"/>
+                        <label for="size_1">Petite</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="size" id="size_2" value="small"/>
+                        <label for="size_2">Moyenne</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="size" id="size_3" value="small"/>
+                        <label for="size_3">Grande</label>
+                    </p>
+                </fieldset>
+            </section>
+            <section>
+                <p>
+                    <label for="taste_1">J'aime les cerises</label>
+                    <input type="checkbox" id="taste_1" name="taste_cherry" value="1"/>
+                </p>
+                <p>
+                    <label for="taste_2">J'aime les bananes</label>
+                    <input type="checkbox" id="taste_2" name="taste_banana" value="2"/>
+                </p>
+            </section>
+            <section>
+                <div>
+                    <ul>
+                        <li>
+                            <label for="name">Nom&nbsp</label>
+                            <input type="text" id="name" name="user_name" />
+                        </li>
+                        <li>
+                            <label for="mail">E-mail&nbsp;:</label>
+                            <input type="email" id="mail" name="user_mail"/>
+                        </li>
+                        <li>
+                            <label for="msg">Message&nbsp;:</label>
+                            <textarea id="msg" name="user_message"></textarea>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <div class="button">
+                    <button type="submit">Envoyer le message</button>
+                </div>
+            </section>
+        </form>
+    </section>
+</body>
+<footer>
+    <p>Example form | 2025</p>
+</footer>
+</html>
