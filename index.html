@@ -5,6 +5,9 @@
     <meta name="description" content="Free Web tutorials">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script>
+    function myFunction() {document.getElementById("demo").innerHTML = "Paragraph changed.";}
+    </script>
     <title>Document</title>
 </head>
 <body>
@@ -17,50 +20,64 @@
             </ul>
         </nav>
     </header>
-    <section>
-        <h2>Section 1 (texte)</h2>
-        <div>
-            <p>Texte du section 1</p>
-        </div>
-    </section>
-    <section>
-        <h2>Section 2 (image)</h2>
-        <img src="image.jpg" alt="Description de l'image">
-    </section>
-    <section>
-        <h2>Section 3 (vidéo)</h2>
-        <video controls>
-            <source src="video.mp4" type="video/mp4">
-        </video>
-    </section>
-    <section>
-        <h2>Section 4 (Link)</h2>
-        <a href="https://example.com">Lien vers Example</a>
-        <span style="color:red;">Lien en rouge</span>
-        <strong>Texte en gras</strong>
-    </section>
-    <section>
-        <h2>Section 5 (Tableau)</h2>
-        <table border ="1">
-            <tr>
-                <th>Nom</th>
-                <th>Age</th>
-            </tr>
-            <tr>
-                <th>Alice</th>
-                <th>25</th>
-            </tr>
-        </table>
-    </section>
-    <section>
-        <h2>Section 6 (Form)</h2>
-        <form>
-            <label for="nom">Nom</label>
-            <input type="text" id="nom" name="nom">
-            <textaera placeholder="Votre message"></textaera>
-            <button type="submit">Envoyer</button>
-        </form>
-    </section>
+    <article>
+        <section>
+            <h2>Section 1 (texte)</h2>
+            <div>
+                <p>Texte du section 1</p>
+            </div>
+        </section>
+        <section>
+            <h2>Section 2 (image)</h2>
+            <img src="image.jpg" alt="Description de l'image">
+        </section>
+        <section>
+            <h2>Section 3 (vidéo)</h2>
+            <!-- <video controls>
+                <source src="video.mp4" type="video/mp4">
+            </video> -->
+
+            <!-- <iframe id="video" src="https://www.youtube.com/embed/tPJCvwRrYWo?si=R54-yMIEiUh7Sf7k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/tPJCvwRrYWo" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section>
+            <h2>Section 4 (Link)</h2>
+            <a href="https://example.com">Lien vers Example</a>
+            <span style="color:red;">Lien en rouge</span>
+            <strong>Texte en gras</strong>
+        </section>
+        <section>
+            <h2>Section 5 (Tableau)</h2>
+            <table border ="1">
+                <tr>
+                    <th>Nom</th>
+                    <th>Age</th>
+                </tr>
+                <tr>
+                    <th>Alice</th>
+                    <th>25</th>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h2>Section 6 (Form)</h2>
+            <form>
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom">
+                <textaera placeholder="Votre message"></textaera>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+        <section>
+            <h2>Section 6 (Form)</h2>
+<h2>Demo JavaScript in Head</h2>
+
+<p id="demo">A Paragraph</p>
+<button type="button" onclick="myFunction()">Try it</button>
+        </section>
+    </article>
 </body>
 <footer>
     <p>Example footer | 2025</p>
