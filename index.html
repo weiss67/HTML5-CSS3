@@ -5,6 +5,7 @@
     <meta name="description" content="Free Web tutorials">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="phone.css">
     <script>
     function myFunction() {document.getElementById("demo").innerHTML = "Paragraph changed.";}
     </script>
@@ -12,40 +13,25 @@
 </head>
 <body>
     <header id="Wlcm">
-        <h1>Mon blog</h1>
         <nav>
+            <label class="nav_phone" for="toggle">☰</label>
+            <input type="checkbox" id="toggle">
             <div class="nav_listing">
-                <ul>
-                    <il><a href="#Wlcm">Acceuil</a></il>
-                    <il><a href="#Text">Text</a></il>
-                    <il><a href="#img">Image</a></il>
-                    <il><a href="#mp4">Vidéo</a></il>
-                    <il><a href="#link">Lien</a></il>
-                    <il><a href="#tbl">Tableau</a></il>
-                    <il><a href="#form">Form</a></il>
-                    <il><a href="#jvst">Javascript</a></il>
-                     
-                    <!-- <a href="#Wlcm">Acceuil</a> -->
-                    <!-- <a href="#Text">Text</a> -->
-                    <!-- <a href="#img">Image</a> -->
-                    <!-- <a href="#jvst">Javascript</a> -->
-                    <!-- <a href="#mp4">Vidéo</a> -->
-                    <!-- <a href="#link">Lien</a> -->
-                    <!-- <a href="#tbl">Tableau</a> -->
-                    <!-- <a href="#form">Form</a> -->
-                </ul>
+                <a href="#Wlcm">Acceuil</a>
+                <a href="#Text">Text</a>
+                <a href="#img">Image</a>
+                <a href="#jvst">Javascript</a>
+                <a href="#mp4">Vidéo</a>
+                <a href="#link">Lien</a>
+                <a href="#tbl">Tableau</a>
+                <a href="form.html">Form</a>
             </div>
-
-
-            <!-- <ul> -->
-                <!-- permet de chiffre dans l'ordre et modifiable en CSS  -->
-                <!-- <ol>test</ol> -->
-                <!-- <ol>test</ol> -->
-                <!-- <ol>test</ol> -->
-            <!-- </ul> -->
         </nav>
     </header>
-    <article>
+    <main>
+        <!-- <section id="title_principal"> -->
+            <h1>ABC Dev</h1>
+        <!-- </section> -->
         <section id="Text">
             <h2>Section 1 (texte)</h2>
             <div>
@@ -54,7 +40,7 @@
         </section>
         <section id="img">
             <h2>Section 2 (image)</h2>
-            <img src="image.jpg" alt="Description de l'image">
+            <img class="png" src="media/Battlefield-6.jpg" alt="Description de l'image">
         </section>
         <section id="mp4">
             <h2>Section 3 (vidéo)</h2>
@@ -86,23 +72,14 @@
                 </tr>
             </table>
         </section>
-        <section id="form">
-            <h2>Section 6 (Form)</h2>
-            <form>
-                <label for="nom">Nom<br></label>
-                <input type="text" id="nom" name="nom">
-                <textaera placeholder="Votre message" required></textaera>
-                <button type="submit">Envoyer</button>
-            </form>
-        </section>
         <section id="jvst">
-            <h2>Section 6 (Form)</h2>
+            <h2>Section 6 (JS)</h2>
             <h3>Demo JavaScript in Head</h3>
             
             <p id="demo">A Paragraph</p>
             <button type="button" onclick="myFunction()">Try it</button>
         </section>
-    </article>
+    </main>
 </body>
 <footer>
     <p>Example footer | 2025</p>

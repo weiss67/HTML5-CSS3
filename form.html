@@ -4,24 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="phone.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <h1>Formulaire principal</h1>
+    <header id="Wlcm">
         <nav>
-            <ul>
-                <il><a href="#">Formulaire</a></il>
-            </ul>
+            <label class="nav_phone">☰</label>
+            <div class="nav_listing">
+                <a href="index.html#Wlcm">Acceuil</a>
+                <a href="index.html#Text">Text</a>
+                <a href="index.html#img">Image</a>
+                <a href="index.html#jvst">Javascript</a>
+                <a href="index.html#mp4">Vidéo</a>
+                <a href="index.html#link">Lien</a>
+                <a href="index.html#tbl">Tableau</a>
+                <a href="form.html">Form</a>
+            </div>
         </nav>
     </header>
-    <article>
+    <main>
         <h2>Section formulaire</h2>
+        <section>
         <!-- à garder pour plus tard -->
         <!-- <form action="/ma-page-de-traitement" method="post"> -->
         <form action="traitement.php" method="GET">
         <!-- <form> -->
-            <section>
                 <fieldset>
                     <legend>Taille du jus de fruits</legend>
                     <p>
@@ -37,8 +45,7 @@
                         <label for="size_3">Grande</label>
                     </p>
                 </fieldset>
-            </section>
-            <section>
+
                 <p>
                     <label for="taste_1">J'aime les cerises</label>
                     <input type="checkbox" id="taste_1" name="taste_cherry" value="1"/>
@@ -47,8 +54,7 @@
                     <label for="taste_2">J'aime les bananes</label>
                     <input type="checkbox" id="taste_2" name="taste_banana" value="2"/>
                 </p>
-            </section>
-            <section>
+
                 <div>
                     <ul>
                         <li>
@@ -65,14 +71,13 @@
                         </li>
                     </ul>
                 </div>
-            </section>
-            <section>
+
                 <div class="button">
                     <button type="submit">Envoyer le message</button>
                 </div>
-            </section>
-        </form>
-    </article>
+            </form>
+        </section>
+    </main>
 </body>
 <footer>
     <p>Example form | 2025</p>

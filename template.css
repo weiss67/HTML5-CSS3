@@ -1,0 +1,21 @@
+@font-face{
+    font-family: 'PersonnalFont';
+    src: url(../fonts/xxx.otf);
+}
+
+
+template{
+    margin: 0px; /* marge*/
+    width: 0%; /* largeur */
+    height: 0%; /* hauteur */
+
+    font-size: 3em; /* taille police */
+    font-weight: 600; /* épaisseur */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
