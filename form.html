@@ -8,19 +8,30 @@
     <title>Document</title>
 </head>
 <body>
+    <script src="scripts.js"></script>
+    <script src="citiesTables.js"></script>
     <header id="Wlcm">
-        <nav>
-            <label class="nav_phone">☰</label>
-            <div class="nav_listing">
-                <a href="index.html#Wlcm">Acceuil</a>
-                <a href="index.html#Text">Text</a>
-                <a href="index.html#img">Image</a>
-                <a href="index.html#jvst">Javascript</a>
-                <a href="index.html#mp4">Vidéo</a>
-                <a href="index.html#link">Lien</a>
-                <a href="index.html#tbl">Tableau</a>
-                <a href="form.html">Form</a>
-            </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#Wlcm">Acceuil</a></li>
+                <li class="dropdown">
+                    <a href="#Text">Text</a>
+                    <ul class="submenu">
+                        <li><a href="#Text">Text 1</a></li>
+                        <li><a href="#Text">Text 2</a></li>
+                        <li><a href="#Text">Text 3</a></li>
+                        <li><a href="#Text">Text 4</a></li>
+                        <li><a href="#Text">Text 5</a></li>
+                    </ul>
+                </li>
+                <li><a href="#img">Image</a></li>
+                <li><a href="#jvst">Javascript</a></li>
+                <li><a href="#mp4">Vidéo</a></li>
+                <li><a href="#link">Lien</a></li>
+                <li><a href="#tbl">Tableau</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="button.html">Button</a></li>
+            </ul>
         </nav>
     </header>
     <main>
@@ -28,8 +39,8 @@
         <section>
         <!-- à garder pour plus tard -->
         <!-- <form action="/ma-page-de-traitement" method="post"> -->
-        <form action="traitement.php" method="GET">
-        <!-- <form> -->
+        <!-- <form action="traitement.php" method="GET"> -->
+        <form>
                 <fieldset>
                     <legend>Taille du jus de fruits</legend>
                     <p>
@@ -72,14 +83,18 @@
                     </ul>
                 </div>
 
-                <div class="button">
+                <!-- <div class="button">
                     <button type="submit">Envoyer le message</button>
-                </div>
+                </div> -->
             </form>
+
+                <button id="btn">Clique-moi</button>
+                <div id="zone"></div>
         </section>
     </main>
+    <footer>
+        <p>Example footer | 2025</p>
+    </footer>
+
 </body>
-<footer>
-    <p>Example form | 2025</p>
-</footer>
 </html>

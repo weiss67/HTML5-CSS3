@@ -12,10 +12,18 @@ template{
     font-size: 3em; /* taille police */
     font-weight: 600; /* épaisseur */
 
+    list-style-type: none; /* Retirer les puces */
+    text-decoration: none; /* Retirer tout soulignement */
+    white-space: nowrap;   /* Empêche le texte de passer à la ligne */
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+
+    /* :hover */
+    /* :focus */
+    /* :focus-within */
 
 }

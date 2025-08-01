@@ -1,0 +1,25 @@
+:root {
+  /* Fonds */
+  --bg-dark: rgb(23, 23, 23);
+  --bg-secondary: rgb(36, 36, 36);
+  
+  /* Textes */
+  --text-primary: rgb(230, 230, 230); /* Contrast ≥ 7:1 */
+  --text-secondary: rgb(180, 180, 180); /* Contrast ≥ 4.5:1 */
+  
+  /* Accents */
+  --accent: rgb(100, 150, 255); /* Bleu accessible */
+  --accent-hover: rgb(150, 200, 255);
+}
+
+/* Mode sombre */
+body.dark-mode {
+
+    background: var(--bg-dark);
+    color: var(--text-primary);
+}
+
+h1.dark-mode {
+    /* background: #121212; */
+    color: white;
+}

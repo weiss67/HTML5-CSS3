@@ -12,20 +12,30 @@
     <title>Document</title>
 </head>
 <body>
+    <script src="scripts.js"></script>
+    <script src="citiesTables.js"></script>
     <header id="Wlcm">
-        <nav>
-            <label class="nav_phone" for="toggle">☰</label>
-            <input type="checkbox" id="toggle">
-            <div class="nav_listing">
-                <a href="#Wlcm">Acceuil</a>
-                <a href="#Text">Text</a>
-                <a href="#img">Image</a>
-                <a href="#jvst">Javascript</a>
-                <a href="#mp4">Vidéo</a>
-                <a href="#link">Lien</a>
-                <a href="#tbl">Tableau</a>
-                <a href="form.html">Form</a>
-            </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#Wlcm">Home</a></li>
+                <li class="dropdown">
+                    <a href="#Text">Text</a>
+                    <ul class="submenu">
+                        <li><a href="#Text">Text 1</a></li>
+                        <li><a href="#Text">Text 2</a></li>
+                        <li><a href="#Text">Text 3</a></li>
+                        <li><a href="#Text">Text 4</a></li>
+                        <li><a href="#Text">Text 5</a></li>
+                    </ul>
+                </li>
+                <li><a href="#img">Image</a></li>
+                <li><a href="#jvst">Javascript</a></li>
+                <li><a href="#mp4">Vidéo</a></li>
+                <li><a href="#link">Lien</a></li>
+                <li><a href="#tbl">Tableau</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="button.html">Button</a></li>
+            </ul>
         </nav>
     </header>
     <main>
@@ -80,8 +90,11 @@
             <button type="button" onclick="myFunction()">Try it</button>
         </section>
     </main>
+    <footer>
+        <p>Example footer | 2025</p>
+    </footer>
+    <script>
+        alert("Hello world!")
+    </script>
 </body>
-<footer>
-    <p>Example footer | 2025</p>
-</footer>
 </html>
