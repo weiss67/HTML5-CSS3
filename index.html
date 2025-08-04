@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="phone.css">
+    <link rel="stylesheet" href="dark-mode.css">
     <script>
     function myFunction() {document.getElementById("demo").innerHTML = "Paragraph changed.";}
     </script>
@@ -17,24 +18,25 @@
     <header id="Wlcm">
         <nav class="menu">
             <ul>
-                <li><a href="#Wlcm">Home</a></li>
+                <li><a href="index.html#Wlcm">Home</a></li>
                 <li class="dropdown">
                     <a href="#Text">Text</a>
                     <ul class="submenu">
-                        <li><a href="#Text">Text 1</a></li>
-                        <li><a href="#Text">Text 2</a></li>
-                        <li><a href="#Text">Text 3</a></li>
-                        <li><a href="#Text">Text 4</a></li>
-                        <li><a href="#Text">Text 5</a></li>
+                        <li><a href="index.html#Text">Text 1</a></li>
+                        <li><a href="index.html#Text">Text 2</a></li>
+                        <li><a href="index.html#Text">Text 3</a></li>
+                        <li><a href="index.html#Text">Text 4</a></li>
+                        <li><a href="index.html#Text">Text 5</a></li>
                     </ul>
                 </li>
-                <li><a href="#img">Image</a></li>
-                <li><a href="#jvst">Javascript</a></li>
-                <li><a href="#mp4">Vidéo</a></li>
-                <li><a href="#link">Lien</a></li>
-                <li><a href="#tbl">Tableau</a></li>
+                <li><a href="index.html#img">Image</a></li>
+                <li><a href="index.html#jvst">Javascript</a></li>
+                <li><a href="index.html#mp4">Vidéo</a></li>
+                <li><a href="index.html#link">Lien</a></li>
+                <li><a href="index.html#tbl">Tableau</a></li>
                 <li><a href="form.html">Form</a></li>
                 <li><a href="button.html">Button</a></li>
+                <li><a href="list.html">Liste</a></li>
             </ul>
         </nav>
     </header>
@@ -42,17 +44,17 @@
         <!-- <section id="title_principal"> -->
             <h1>ABC Dev</h1>
         <!-- </section> -->
-        <section id="Text">
+        <section class="block_index" id="Text">
             <h2>Section 1 (texte)</h2>
             <div>
                 <p>Texte du section 1</p>
             </div>
         </section>
-        <section id="img">
+        <section class="block_index" id="img">
             <h2>Section 2 (image)</h2>
             <img class="png" src="media/Battlefield-6.jpg" alt="Description de l'image">
         </section>
-        <section id="mp4">
+        <section class="block_index" id="mp4">
             <h2>Section 3 (vidéo)</h2>
             <!-- <video controls>
                 <source src="video.mp4" type="video/mp4">
@@ -63,13 +65,13 @@
                 <iframe src="https://www.youtube.com/embed/tPJCvwRrYWo" frameborder="0" allowfullscreen></iframe>
             </div>
         </section>
-        <section id="link">
+        <section class="block_index" id="link">
             <h2>Section 4 (Link)</h2>
             <a href="https://example.com">Lien vers Example</a>
             <span style="color:red;">Lien en rouge</span>
             <strong>Texte en gras</strong>
         </section>
-        <section id="tbl">
+        <section class="block_index" id="tbl">
             <h2>Section 5 (Tableau)</h2>
             <table border ="1">
                 <tr>
@@ -82,7 +84,7 @@
                 </tr>
             </table>
         </section>
-        <section id="jvst">
+        <section class="block_index" id="jvst">
             <h2>Section 6 (JS)</h2>
             <h3>Demo JavaScript in Head</h3>
             
